@@ -11704,7 +11704,7 @@ data = {
 {text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text 'اوامر المنشئينئين', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
 },
 {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
@@ -11762,7 +11762,7 @@ data = {
 {text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text 'اوامر المنشئينئين', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
 },
 {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
@@ -11821,7 +11821,7 @@ data = {
 {text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text 'اوامر المنشئينئين', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
 },
 {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
@@ -11874,7 +11874,7 @@ data = {
 {text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text 'اوامر المنشئينئين', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
 },
 {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
@@ -11914,7 +11914,7 @@ data = {
 {text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text 'اوامر المنشئينئين', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
 },
 {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
@@ -11969,7 +11969,7 @@ data = {
 {text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text 'اوامر المنشئينئين', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
 },
 {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
@@ -12010,7 +12010,7 @@ data = {
 {text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text 'اوامر المنشئينئين', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
 },
 {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 

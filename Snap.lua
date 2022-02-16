@@ -2596,7 +2596,7 @@ data = {
 {text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
 },
 {
-{text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -2679,7 +2679,7 @@ data = {
 {text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
 },
 {
-{text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }

@@ -6137,18 +6137,6 @@ data = {
 }
 return LuaTele.sendText(msg_chat_id,msg_id,'*᥀︙يرجاء تأكيد الأمر عزيزي*',"md",false, false, false, false, reply_markup)
 end
-if Text and Text:match('/Zxchq(.*)') then
-local UserId = Text:match('/Zxchq(.*)')
-LuaTele.answerCallbackQuery(data.id, "᥀︙تم مغادره البوت من المجموعه", true)
-LuaTele.leaveChat(UserId)
-end
-if Text and Text:match('(%d+)/Redis') then
-local UserId = Text:match('(%d+)/Redis')
-LuaTele.answerCallbackQuery(data.id, "᥀︙تم الغاء الامر بنجاح", true)
-if tonumber(IdUser) == tonumber(UserId) then
-return LuaTele.deleteMessages(ChatId,{[1]= Msg_id})
-end
-end
 if text == 'تاك للكل' then
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
@@ -12791,12 +12779,18 @@ end
 LuaTele.answerCallbackQuery(data.id, "᥀︙تم قفل جميع الاوامر بنجاح  ", true)
 end
 end
-if Text and Text:match('/leftgroup@(.*)') then
-local UserId = Text:match('/leftgroup@(.*)')
+if Text and Text:match('/Zxchq(.*)') then
+local UserId = Text:match('/Zxchq(.*)')
 LuaTele.answerCallbackQuery(data.id, "᥀︙تم مغادره البوت من المجموعه", true)
 LuaTele.leaveChat(UserId)
 end
-
+if Text and Text:match('(%d+)/Redis') then
+local UserId = Text:match('(%d+)/Redis')
+LuaTele.answerCallbackQuery(data.id, "᥀︙تم الغاء الامر بنجاح", true)
+if tonumber(IdUser) == tonumber(UserId) then
+return LuaTele.deleteMessages(ChatId,{[1]= Msg_id})
+end
+end
 
 if Text and Text:match('(%d+)/groupNumseteng//(%d+)') then
 local UserId = {Text:match('(%d+)/groupNumseteng//(%d+)')}

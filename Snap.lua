@@ -2571,56 +2571,6 @@ return LuaTele.sendText(msg.chat_id,msg.id,'*\n᥀︙عليك الاشتراك �
 end
 LuaTele.sendText(msg_chat_id,msg_id,'*᥀︙عدد احصائيات البوت الكامله \n— — — — — — — — —\n᥀︙عدد المجموعات : '..(Redis:scard(TheSnap..'Snap:ChekBotAdd') or 0)..'\n᥀︙عدد المشتركين : '..(Redis:scard(TheSnap..'Snap:Num:User:Pv') or 0)..'*',"md",true)  
 end
-if text == 'تفعيل' and msg.Developers then
-if msg.can_be_deleted_for_all_users == false then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n*᥀︙عذرآ البوت ليس ادمن في المجموعه يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
-end
-local Get_Chat = LuaTele.getChat(msg_chat_id)
-local Info_Chats = LuaTele.getSupergroupFullInfo(msg_chat_id)
-if Redis:sismember(TheSnap.."Snap:ChekBotAdd",msg_chat_id) then
-if tonumber(Info_Chats.member_count) < tonumber((Redis:get(TheSnap..'Snap:Num:Add:Bot') or 0)) and not msg.ControllerBot then
-return LuaTele.sendText(msg_chat_id,msg_id,'᥀︙عدد الاعضاء قليل لا يمكن تفعيل المجموعه  يجب ان يكوم اكثر من :'..Redis:get(TheSnap..'Snap:Num:Add:Bot'),"md",true)  
-end
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙المجموعه : {*['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')*}\n᥀︙تم تفعيلها مسبقا *',"md",true)  
-else
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
-data = {
-{
-{text = '‹ رفع الادمنيه ›', data = msg.sender.user_id..'/addAdmins@'..msg_chat_id},{text = '‹ تفعيل الحمايه ›', data =msg.sender.user_id..'/LockAllGroup@'..msg_chat_id},
-},
-{
-{text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
-},
-{
-{text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'},
-},
-}
-}
-if not msg.ControllerBot then
-local UserInfo = LuaTele.getUser(msg.sender.user_id)
-for Name_User in string.gmatch(UserInfo.first_name, "[^%s]+" ) do
-UserInfo.first_name = Name_User
-break
-end
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
-data = {
-{
-{text = '- مغادرة المجموعه ', data = '/leftgroup@'..msg_chat_id}, 
-},
-{
-{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}, 
-},
-}
-}
-LuaTele.sendText(Sudo_Id,0,'*\n᥀︙تم تفعيل مجموعه جديده \n᥀︙من قام بتفعيلها : {*['..UserInfo.first_name..'](tg://user?id='..msg.sender.user_id..')*} \n᥀︙معلومات المجموعه :\n᥀︙عدد الاعضاء : '..Info_Chats.member_count..'\n᥀︙عدد الادمنيه : '..Info_Chats.administrator_count..'\n᥀︙عدد المطرودين : '..Info_Chats.banned_count..'\n🔕︙عدد المقيدين : '..Info_Chats.restricted_count..'*',"md",true, false, false, false, reply_markup)
-end
-Redis:sadd(TheSnap.."Snap:ChekBotAdd",msg_chat_id)
-Redis:set(TheSnap.."Snap:Status:Id"..msg_chat_id,true) ;Redis:set(TheSnap.."Snap:Status:Reply"..msg_chat_id,true) ;Redis:set(TheSnap.."Snap:Status:ReplySudo"..msg_chat_id,true) ;Redis:set(TheSnap.."Snap:Status:BanId"..msg_chat_id,true) ;Redis:set(TheSnap.."Snap:Status:SetId"..msg_chat_id,true) 
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙المجموعه : {*['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')*}\n᥀︙تم تفعيل المجموعه *','md', true, false, false, false, reply_markup)
-end
-end 
 if text == 'تفعيل' and not msg.Developers then
 if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*᥀︙عذرآ البوت ليس ادمن في المجموعه يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
@@ -2664,7 +2614,7 @@ data = {
 },
 }
 }
-LuaTele.sendText(Sudo_Id,0,'*\n᥀︙تم تفعيل مجموعه جديده \n᥀︙من قام بتفعيلها : {*['..UserInfo.first_name..'](tg://user?id='..msg.sender.user_id..')*} \n᥀︙معلومات المجموعه :\n᥀︙عدد الاعضاء : '..Info_Chats.member_count..'\n᥀︙عدد الادمنيه : '..Info_Chats.administrator_count..'\n᥀︙عدد المطرودين : '..Info_Chats.banned_count..'\n🔕︙عدد المقيدين : '..Info_Chats.restricted_count..'*',"md",true, false, false, false, reply_markup)
+LuaTele.sendText(Sudo_Id,0,'*\n᥀︙تم تفعيل مجموعه جديده \n᥀︙من قام بتفعيلها : {*['..UserInfo.first_name..'](tg://user?id='..msg.sender.user_id..')*} \n᥀︙معلومات المجموعه :\n᥀︙عدد الاعضاء : '..Info_Chats.member_count..'\n᥀︙عدد الادمنيه : '..Info_Chats.administrator_count..'\n᥀︙عدد المطرودين : '..Info_Chats.banned_count..'\n᥀︙عدد المقيدين : '..Info_Chats.restricted_count..'*',"md",true, false, false, false, reply_markup)
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',

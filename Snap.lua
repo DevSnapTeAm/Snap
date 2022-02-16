@@ -4393,15 +4393,15 @@ return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙تم تفعيل اطردني "
 end
 if TextMsg == 'صورتي' then
 Redis:set(TheSnap.."Snap:Status:photo"..msg_chat_id,true) 
-return LuaTele.sendText(msg_chat_id,msg_id,"◉ تم تفعيل صورتي ","md",true)
+return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙تم تفعيل صورتي ","md",true)
 end
 if TextMsg == 'قول' then
 Redis:set(TheSnap.."Snap:Status:kool"..msg_chat_id,true) 
-return LuaTele.sendText(msg_chat_id,msg_id,"◉ تم تفعيل امر قول ","md",true)
+return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙تم تفعيل امر قول ","md",true)
 end
 if TextMsg == 'جمالي' then
 Redis:set(TheSnap.."Snap:Status:gamle"..msg_chat_id,true) 
-return LuaTele.sendText(msg_chat_id,msg_id,"◉ تم تفعيل جمالي ","md",true)
+return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙تم تفعيل جمالي ","md",true)
 end
 if TextMsg == 'ردود السورس' then
 Redis:set(TheSnap.."Snap:Sasa:Jeka"..msg_chat_id,true) 
@@ -4854,15 +4854,15 @@ return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙تم تعطيل اطردني "
 end
 if TextMsg == 'صورتي' then
 Redis:del(TheSnap.."Snap:Status:photo"..msg_chat_id) 
-return LuaTele.sendText(msg_chat_id,msg_id,"◉ تم تعطيل صورتي ","md",true)
+return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙تم تعطيل صورتي ","md",true)
 end
 if TextMsg == 'قول' then
 Redis:del(TheSnap.."Snap:Status:kool"..msg_chat_id) 
-return LuaTele.sendText(msg_chat_id,msg_id,"◉ تم تعطيل امر قول ","md",true)
+return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙تم تعطيل امر قول ","md",true)
 end
 if TextMsg == 'جمالي' then
 Redis:del(TheSnap.."Snap:Status:gamle"..msg_chat_id) 
-return LuaTele.sendText(msg_chat_id,msg_id,"◉ تم تعطيل جمالي ","md",true)
+return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙تم تعطيل جمالي ","md",true)
 end
 if TextMsg == 'ردود السورس' then
 Redis:del(TheSnap.."Snap:Sasa:Jeka"..msg_chat_id) 
@@ -9548,6 +9548,27 @@ local m = text:match("^كول (.*)$")
 if Redis:get(TheSnap.."Snap:Status:kool"..msg.chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,m,"md",true) 
 end
+end
+if text == 'رابط الحذف' or text == 'رابط حذف' then
+if ChannelJoin(msg) == false then
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(TheSnap..'Snap:Channel:Join')}, },}}
+return LuaTele.sendText(msg.chat_id,msg.id,'*\n᥀︙عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
+end
+local reply_markup = LuaTele.replyMarkup{
+type = 'inline',
+data = {
+{
+{text = 'Telegram', url = 'https://my.telegram.org/auth?to=delete'},{text = 'Instagram', url = 'https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/'}
+},
+{
+{text = 'Facebook', url = 'https://www.facebook.com/help/deleteaccount'},{text = 'Snapchat', url = 'https://accounts.Snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.Snapchat.com%2Faccounts%2Fdeleteaccount'}
+},
+{
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'}, 
+},
+}
+}
+return LuaTele.sendText(msg_chat_id,msg_id,'*᥀︙رابط الحذف في جميع مواقع التواصل*',"md",false, false, false, false, reply_markup)
 end
 if text == "صورتي" then
 if Redis:get(TheSnap.."Snap:Status:photo"..msg.chat_id) then

@@ -9746,7 +9746,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9760,7 +9760,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9776,7 +9776,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9792,7 +9792,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9809,7 +9809,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9824,7 +9824,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9839,7 +9839,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9854,7 +9854,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9883,7 +9883,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9898,7 +9898,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9913,7 +9913,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9928,7 +9928,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9943,7 +9943,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9959,7 +9959,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9973,7 +9973,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9988,7 +9988,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
 },
 }
 }

@@ -6116,18 +6116,26 @@ if y == true then
 LuaTele.sendText(msg_chat_id,msg_id,restricted,"md",true)  
 end
 end
-
-
-if text == "غادر" then 
-if not msg.ControllerBot then 
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
+if text == "غادر" or text == "بوت غادر" or text == "مغادره" then 
+if not msg.Developers then
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙هاذا الامر يخص { '..Controller_Num(3)..' }* ',"md",true)  
+end
+if not msg.ControllerBot and not Redis:set(TheSnap.."Snap:LeftBot") then
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙امر المغادره معطل من قبل الاساسي *',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(TheSnap..'Snap:Channel:Join')}, },}}
-return LuaTele.sendText(msg.chat_id,msg.id,'*\n᥀︙عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = ''..Redis:get(TheSnap..'Snap:Channel:Join:Name')..'', url = 't.me/'..Redis:get(TheSnap..'Snap:Channel:Join')}, },}}
+return LuaTele.sendText(msg.chat_id,msg.id,'\n• يجب عليك الاشتراك في القناه',"md",false, false, false, false, reply_markup)
 end
-LuaTele.sendText(msg_chat_id,msg_id,"*\n᥀︙تم مغادرة المجموعه بامر من المطور *","md",true)  
-local Left_Bot = LuaTele.leaveChat(msg.chat_id)
+local reply_markup = LuaTele.replyMarkup{
+type = 'inline',
+data = {
+{
+{text = '< تأكيد الامر .>', data = '/Zxchq'..msg_chat_id}, {text = '< الغاء الامر .>', data = msg.sender.user_id..'/Redis'}, 
+},
+}
+}
+return LuaTele.sendText(msg_chat_id,msg_id,'*᥀︙يرجاء تأكيد الأمر عزيزي*',"md",false, false, false, false, reply_markup)
 end
 if text == 'تاك للكل' then
 if not msg.Addictive then

@@ -9586,16 +9586,16 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '<. اوامر الحمايه >', data = msg.sender.user_id..'/help1'}, {text = '<. اوامر الادمنيه >', data = msg.sender.user_id..'/help2'}, 
+{text = 'اوامر الحمايه', data = msg.sender.user_id..'/help1'}, {text = ' اوامر الادمنيه', data = msg.sender.user_id..'/help2'}, 
 },
 {
-{text = '<. اوامر المدراء >', data = msg.sender.user_id..'/help3'}, {text = '<. اوامر المنشئين >', data = msg.sender.user_id..'/help4'}, 
+{text = 'اوامر المدراء', data = msg.sender.user_id..'/help3'}, {text = 'اوامر المنشئين', data = msg.sender.user_id..'/help4'}, 
 },
 {
-{text = '<. اوامر مطورين >', data = msg.sender.user_id..'/help5'}, {text = '<. الالعاب >', data = msg.sender.user_id..'/help6'}, 
+{text = 'اوامر مطورين', data = msg.sender.user_id..'/help5'}, {text = 'الالعاب', data = msg.sender.user_id..'/help6'}, 
 },
 {
-{text = '<. اوامر القفل الفتح >', data = msg.sender.user_id..'/NoNextSeting'}, {text = '<. اوامر التعطيل التفعيل >', data = msg.sender.user_id..'/listallAddorrem'}, 
+{text = 'اوامر القفل الفتح', data = msg.sender.user_id..'/NoNextSeting'}, {text = '  اوامر التعطيل التفعيل  ', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
 {text = '< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >', url = 't.me/ii77i9'},
@@ -11701,19 +11701,19 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '<. اوامر الحمايه >', data = IdUser..'/help1'}, {text = '<. اوامر الادمنيه >', data = IdUser..'/help2'}, 
+{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = '<. اوامر المدراء >', data = IdUser..'/help3'}, {text '<. اوامر المنشئين >', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text اوامر المنشئينئين', data = IdUser..'/help4'}, 
 },
 {
-{text = '<. اوامر المطورين >', data = IdUser..'/help5'}, {text = '<. الالعاب >', data = IdUser..'/help6'}, 
+{text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = '<. القائمه الرئيسيه > ', data = IdUser..'/helpall'},
+{text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '<. اخفاء الامر >', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -11759,19 +11759,19 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '<. اوامر الحمايه >', data = IdUser..'/help1'}, {text = '<. اوامر الادمنيه >', data = IdUser..'/help2'}, 
+{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = '<. اوامر المدراء >', data = IdUser..'/help3'}, {text '<. اوامر المنشئين >', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text اوامر المنشئينئين', data = IdUser..'/help4'}, 
 },
 {
-{text = '<. اوامر المطورين >', data = IdUser..'/help5'}, {text = '<. الالعاب >', data = IdUser..'/help6'}, 
+{text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = '<. القائمه الرئيسيه >', data = IdUser..'/helpall'},
+{text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '<. اخفاء الامر >', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -11818,19 +11818,19 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '<. اوامر الحمايه >', data = IdUser..'/help1'}, {text = '<. اوامر الادمنيه >', data = IdUser..'/help2'}, 
+{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = '<. اوامر المدراء >', data = IdUser..'/help3'}, {text '<. اوامر المنشئين >', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text اوامر المنشئينئين', data = IdUser..'/help4'}, 
 },
 {
-{text = '<. اوامر المطورين >', data = IdUser..'/help5'}, {text = '<. الالعاب >', data = IdUser..'/help6'}, 
+{text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = '<. القائمه الرئيسيه >', data = IdUser..'/helpall'},
+{text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '<. اخفاء الامر >', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -11871,19 +11871,19 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '<. اوامر الحمايه >', data = IdUser..'/help1'}, {text = '<. اوامر الادمنيه >', data = IdUser..'/help2'}, 
+{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = '<. اوامر المدراء >', data = IdUser..'/help3'}, {text '<. اوامر المنشئين >', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text اوامر المنشئينئين', data = IdUser..'/help4'}, 
 },
 {
-{text = '<. اوامر المطورين >', data = IdUser..'/help5'}, {text = '<. الالعاب >', data = IdUser..'/help6'}, 
+{text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = '<. القائمه الرئيسيه >', data = IdUser..'/helpall'},
+{text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '<. اخفاء الامر >', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -11911,19 +11911,19 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '<. اوامر الحمايه >', data = IdUser..'/help1'}, {text = '<. اوامر الادمنيه >', data = IdUser..'/help2'}, 
+{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = '<. اوامر المدراء >', data = IdUser..'/help3'}, {text '<. اوامر المنشئين >', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text اوامر المنشئينئين', data = IdUser..'/help4'}, 
 },
 {
-{text = '<. اوامر المطورين >', data = IdUser..'/help5'}, {text = '<. الالعاب >', data = IdUser..'/help6'}, 
+{text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = '<. القائمه الرئيسيه >', data = IdUser..'/helpall'},
+{text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '<. اخفاء الامر >', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -11966,19 +11966,19 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '<. اوامر الحمايه >', data = IdUser..'/help1'}, {text = '<. اوامر الادمنيه >', data = IdUser..'/help2'}, 
+{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = '<. اوامر المدراء >', data = IdUser..'/help3'}, {text '<. اوامر المنشئين >', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text اوامر المنشئينئين', data = IdUser..'/help4'}, 
 },
 {
-{text = '<. اوامر المطورين >', data = IdUser..'/help5'}, {text = '<. الالعاب >', data = IdUser..'/help6'}, 
+{text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = '<. القائمه الرئيسيه >', data = IdUser..'/helpall'},
+{text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '<. اخفاء الامر >', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -12007,19 +12007,19 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '<. اوامر الحمايه >', data = IdUser..'/help1'}, {text = '<. اوامر الادمنيه >', data = IdUser..'/help2'}, 
+{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
-{text = '<. اوامر المدراء >', data = IdUser..'/help3'}, {text '<. اوامر المنشئين >', data = IdUser..'/help4'}, 
+{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text اوامر المنشئينئين', data = IdUser..'/help4'}, 
 },
 {
-{text = '<. اوامر المطورين >', data = IdUser..'/help5'}, {text = '<. الالعاب >', data = IdUser..'/help6'}, 
+{text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = '<. القائمه الرئيسيه >', data = IdUser..'/helpall'},
+{text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '<. اخفاء الامر >', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }

@@ -10204,7 +10204,7 @@ Redis:del(TheSnap.."Snap:Name:Bot")
 return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙تم حذف اسم البوت ","md",true)   
 end
 if text == "بوت" then
-local NamesBot = (Redis:get(TheSnap.."Snap:Name:Bot") or "دروكس")
+local NamesBot = (Redis:get(TheSnap.."Snap:Name:Bot") or "سناب")
 local BotName = {
 "ههلا ؏ـمَݛʊ̤ وياك "..NamesBot,
 "كول حبي اني "..NamesBot.. "",
@@ -10212,13 +10212,13 @@ local BotName = {
 }
 return LuaTele.sendText(msg_chat_id,msg_id,BotName[math.random(#BotName)],"md",true)   
 end
-if text == (Redis:get(TheSnap.."Snap:Name:Bot") or "دروكس") then
-local NamesBot = (Redis:get(TheSnap.."Snap:Name:Bot") or "دروكس")
+if text == (Redis:get(TheSnap.."Snap:Name:Bot") or "سناب") then
+local NamesBot = (Redis:get(TheSnap.."Snap:Name:Bot") or "سناب")
 local NameBots = {
 "عمر "..NamesBot.. " شتريد؟",
 "أჂ̤ أჂ̤ هياتني اني",
 "موجود بس لتصيح",
-"لتــلح دا احجي ويه بنات دروكس بعدين اجاوبك",
+"لتــلح دا احجي ويه بنات سناب بعدين اجاوبك",
 "راح نموت بكورونا ونته بعدك تصيح "..NamesBot,
 'يمعود والله نعسان'
 }
@@ -11207,7 +11207,7 @@ if text == '/start' then
 Redis:sadd(TheSnap..'Snap:Num:User:Pv',msg.sender.user_id)  
 if not msg.ControllerBot then
 if not Redis:get(TheSnap.."Snap:Start:Bot") then
-local CmdStart = '*\n᥀︙أهلآ بك في بوت '..(Redis:get(TheSnap.."Snap:Name:Bot") or "دروكس")..
+local CmdStart = '*\n᥀︙أهلآ بك في بوت '..(Redis:get(TheSnap.."Snap:Name:Bot") or "سناب")..
 '\n᥀︙اختصاص البوت حماية المجموعات'..
 '\n᥀︙لتفعيل البوت عليك اتباع مايلي ...'..
 '\n᥀︙اضف البوت الى مجموعتك'..

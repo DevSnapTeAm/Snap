@@ -711,12 +711,12 @@ else
 UserInfousername = '['..UserInfo.first_name..'](tg://user?id='..UserId..')'
 end
 return {
-Lock     = '[˛ 𝘴ꪀꪖρ ⁩𝙩ꫀꪖ𝙢 .](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه المسح *',
-unLock   = '[˛ 𝘴ꪀꪖρ ⁩𝙩ꫀꪖ𝙢 .](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
-lockKtm  = '[˛ 𝘴ꪀꪖρ ⁩𝙩ꫀꪖ𝙢 .](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الكتم *',
-lockKid  = '[˛ 𝘴ꪀꪖρ ⁩𝙩ꫀꪖ𝙢 .](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه التقييد *',
-lockKick = '[˛ 𝘴ꪀꪖρ ⁩𝙩ꫀꪖ𝙢 .](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الطرد *',
-Reply    = '[˛ 𝘴ꪀꪖρ ⁩𝙩ꫀꪖ𝙢 .](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
+Lock     = '[< 𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝗇𝖺𝗉 . >](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه المسح *',
+unLock   = '[< 𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝗇𝖺𝗉 . >](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
+lockKtm  = '[< 𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝗇𝖺𝗉 . >](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الكتم *',
+lockKid  = '[< 𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝗇𝖺𝗉 . >](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه التقييد *',
+lockKick = '[< 𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝗇𝖺𝗉 . >](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الطرد *',
+Reply    = '[< 𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝗇𝖺𝗉 . >](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
 }
 end
 function StatusCanOrNotCan(ChatId,UserId)
@@ -2273,7 +2273,7 @@ if not msg.ControllerBot then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
 os.execute('rm -rf Snap.lua')
-download('https://raw.githubusercontent.com/Rasul-Muntazar/Snap/master/Snap.lua','Snap.lua')
+download('https://raw.githubusercontent.com/DevSnapTeAm/Snap/master/Snap.lua','Snap.lua')
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙تم تحديث السورس * ',"md",true)  
 end
 if text == '{ تعطيل الاذاعه }' or text == 'تعطيل الاذاعه' then
@@ -2571,6 +2571,56 @@ return LuaTele.sendText(msg.chat_id,msg.id,'*\n᥀︙عليك الاشتراك �
 end
 LuaTele.sendText(msg_chat_id,msg_id,'*᥀︙عدد احصائيات البوت الكامله \n— — — — — — — — —\n᥀︙عدد المجموعات : '..(Redis:scard(TheSnap..'Snap:ChekBotAdd') or 0)..'\n᥀︙عدد المشتركين : '..(Redis:scard(TheSnap..'Snap:Num:User:Pv') or 0)..'*',"md",true)  
 end
+if text == 'تفعيل' and msg.Developers then
+if msg.can_be_deleted_for_all_users == false then
+return LuaTele.sendText(msg_chat_id,msg_id,"\n*᥀︙عذرآ البوت ليس ادمن في المجموعه يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
+end
+local Get_Chat = LuaTele.getChat(msg_chat_id)
+local Info_Chats = LuaTele.getSupergroupFullInfo(msg_chat_id)
+if Redis:sismember(TheSnap.."Snap:ChekBotAdd",msg_chat_id) then
+if tonumber(Info_Chats.member_count) < tonumber((Redis:get(TheSnap..'Snap:Num:Add:Bot') or 0)) and not msg.ControllerBot then
+return LuaTele.sendText(msg_chat_id,msg_id,'᥀︙عدد الاعضاء قليل لا يمكن تفعيل المجموعه  يجب ان يكوم اكثر من :'..Redis:get(TheSnap..'Snap:Num:Add:Bot'),"md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙المجموعه : {*['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')*}\n᥀︙تم تفعيلها مسبقا *',"md",true)  
+else
+local reply_markup = LuaTele.replyMarkup{
+type = 'inline',
+data = {
+{
+{text = '‹ رفع الادمنيه ›', data = msg.sender.user_id..'/addAdmins@'..msg_chat_id},{text = '‹ تفعيل الحمايه ›', data =msg.sender.user_id..'/LockAllGroup@'..msg_chat_id},
+},
+{
+{text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
+},
+{
+{text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'},
+},
+}
+}
+if not msg.ControllerBot then
+local UserInfo = LuaTele.getUser(msg.sender.user_id)
+for Name_User in string.gmatch(UserInfo.first_name, "[^%s]+" ) do
+UserInfo.first_name = Name_User
+break
+end
+local reply_markup = LuaTele.replyMarkup{
+type = 'inline',
+data = {
+{
+{text = '- مغادرة المجموعه ', data = '/leftgroup@'..msg_chat_id}, 
+},
+{
+{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}, 
+},
+}
+}
+LuaTele.sendText(Sudo_Id,0,'*\n᥀︙تم تفعيل مجموعه جديده \n᥀︙من قام بتفعيلها : {*['..UserInfo.first_name..'](tg://user?id='..msg.sender.user_id..')*} \n᥀︙معلومات المجموعه :\n᥀︙عدد الاعضاء : '..Info_Chats.member_count..'\n᥀︙عدد الادمنيه : '..Info_Chats.administrator_count..'\n᥀︙عدد المطرودين : '..Info_Chats.banned_count..'\n🔕︙عدد المقيدين : '..Info_Chats.restricted_count..'*',"md",true, false, false, false, reply_markup)
+end
+Redis:sadd(TheSnap.."Snap:ChekBotAdd",msg_chat_id)
+Redis:set(TheSnap.."Snap:Status:Id"..msg_chat_id,true) ;Redis:set(TheSnap.."Snap:Status:Reply"..msg_chat_id,true) ;Redis:set(TheSnap.."Snap:Status:ReplySudo"..msg_chat_id,true) ;Redis:set(TheSnap.."Snap:Status:BanId"..msg_chat_id,true) ;Redis:set(TheSnap.."Snap:Status:SetId"..msg_chat_id,true) 
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙المجموعه : {*['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')*}\n᥀︙تم تفعيل المجموعه *','md', true, false, false, false, reply_markup)
+end
+end 
 if text == 'تفعيل' and not msg.Developers then
 if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*᥀︙عذرآ البوت ليس ادمن في المجموعه يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
@@ -2614,7 +2664,7 @@ data = {
 },
 }
 }
-LuaTele.sendText(Sudo_Id,0,'*\n᥀︙تم تفعيل مجموعه جديده \n᥀︙من قام بتفعيلها : {*['..UserInfo.first_name..'](tg://user?id='..msg.sender.user_id..')*} \n᥀︙معلومات المجموعه :\n᥀︙عدد الاعضاء : '..Info_Chats.member_count..'\n᥀︙عدد الادمنيه : '..Info_Chats.administrator_count..'\n᥀︙عدد المطرودين : '..Info_Chats.banned_count..'\n᥀︙عدد المقيدين : '..Info_Chats.restricted_count..'*',"md",true, false, false, false, reply_markup)
+LuaTele.sendText(Sudo_Id,0,'*\n᥀︙تم تفعيل مجموعه جديده \n᥀︙من قام بتفعيلها : {*['..UserInfo.first_name..'](tg://user?id='..msg.sender.user_id..')*} \n᥀︙معلومات المجموعه :\n᥀︙عدد الاعضاء : '..Info_Chats.member_count..'\n᥀︙عدد الادمنيه : '..Info_Chats.administrator_count..'\n᥀︙عدد المطرودين : '..Info_Chats.banned_count..'\n🔕︙عدد المقيدين : '..Info_Chats.restricted_count..'*',"md",true, false, false, false, reply_markup)
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
@@ -6389,7 +6439,7 @@ Abs = math.random(2,140);
 local Text ='*᥀︙تم اختيار الاغنيه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '˛ 𝘴ꪀꪖρ ⁩𝙩ꫀꪖ𝙢 .',url="t.me/ii77i9"}},
+{{text = '< 𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝗇𝖺𝗉 . >',url="t.me/ii77i9"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -9609,7 +9659,7 @@ local T = '* 𝘿𝙚𝙫 𝘽𝙤𝙩 \n— — — — — — — — —\n�
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '˛ 𝘴ꪀꪖρ ⁩𝙩ꫀꪖ𝙢 .', url = "https://t.me/ii77i9"}
+{text = '< 𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝗇𝖺𝗉 . >', url = "https://t.me/ii77i9"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -9660,7 +9710,7 @@ data = {
 {text = 'Facebook', url = 'https://www.facebook.com/help/deleteaccount'},{text = 'Snapchat', url = 'https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount'}
 },
 {
-{text = '˛ 𝘴ꪀꪖρ ⁩𝙩ꫀꪖ𝙢 .', url = 't.me/ii77i9'}, 
+{text = '< 𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝗇𝖺𝗉 . >', url = 't.me/ii77i9'}, 
 },
 }
 }
@@ -9679,18 +9729,20 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
 photo = "https://t.me/Rasulm12/22"
 local T =[[
-Welcome to Source : [˛ 𝘴ꪀꪖρ ⁩𝙩ꫀꪖ𝙢 .](https://t.me/ii77i9)
+- 𝖶𝖾𝗅𝖼𝗈𝗆𝖾  𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝖺𝗇𝗉 𝖳𝖾𝖺𝗆 .
+- 𝖳𝗁𝖾 𝗅𝖺𝗋𝗀𝖾𝗌𝗍 𝗉𝗋𝗈𝖿𝖾𝗌𝗌𝗂𝗈𝗇𝖺𝗅 𝗉𝗅𝖺𝗍𝖿𝗈𝗋𝗆 𝗌𝗉𝖾𝖼𝗂𝖺𝗅𝗂𝗓𝖾𝖽 𝗂𝗇 𝖬𝖺𝗄𝗂𝗇𝗀 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖡𝗈𝗍𝗌 .
+- اكبر  منصة أحترافية متخصصة لصنع الروبوتات . : [< 𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝗇𝖺𝗉 . >](https://t.me/ii77i9)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'ᦔꫀ𝙫 𝘴ꪮ𝙪𝘳ᥴꫀ ', url = "https://t.me/DRRDDDP"},{text = '˛ 𝘴ꪀꪖρ .', url = "https://t.me/ii77i9"}
+{text = '< Dev 𝖲𝗇𝖺𝗉 . >', url = "https://t.me/DRRDDDP"},{text = '< 𝖲𝗇𝖺𝗉 . >', url = "https://t.me/ii77i9"}
 },
 {
-{text = '𝘁᭙𝘴 ᦔ𝘳ꪮ᥊', url = "https://t.me/OXJBoT"}
+{text = '< Tws 𝖲𝗇𝖺𝗉 .> ', url = "https://t.me/OXJBoT"}
 },
 {
-{text = '˛ 𝘴ꪀꪖρ ⁩𝙩ꫀꪖ𝙢 .', url = "https://t.me/ii77i9"}
+{text = '< 𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝗇𝖺𝗉 . >', url = "https://t.me/ii77i9"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -9754,7 +9806,7 @@ data = {
 {text = '᥀︙مسح الادمنيه ', data = msg.sender.user_id..'/Addictive'},{text = '᥀︙مسح المميزين ', data = msg.sender.user_id..'/DelDistinguished'},
 },
 {
-{text = '˛ 𝘴ꪀꪖρ ⁩𝙩ꫀꪖ𝙢 .', url = 't.me/ii77i9'}, 
+{text = '< 𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝗇𝖺𝗉 . >', url = 't.me/ii77i9'}, 
 },
 }
 }
@@ -9868,7 +9920,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -9882,7 +9934,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -9898,7 +9950,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -9914,7 +9966,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -9931,7 +9983,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -9946,7 +9998,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -9961,7 +10013,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -9976,7 +10028,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -9991,7 +10043,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -10005,7 +10057,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -10020,7 +10072,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -10035,7 +10087,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -10050,7 +10102,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -10065,7 +10117,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -10081,7 +10133,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -10095,7 +10147,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -10110,7 +10162,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'مسح الرسالة', data =IdUser..'/'.. 'delAmr'}, 
+{text = '‹ مسح الرسالة ›', data =IdUser..'/'.. 'delAmr'}, 
 },
 }
 }
@@ -10152,7 +10204,7 @@ Redis:del(TheSnap.."Snap:Name:Bot")
 return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙تم حذف اسم البوت ","md",true)   
 end
 if text == "بوت" then
-local NamesBot = (Redis:get(TheSnap.."Snap:Name:Bot") or "سناب")
+local NamesBot = (Redis:get(TheSnap.."Snap:Name:Bot") or "دروكس")
 local BotName = {
 "ههلا ؏ـمَݛʊ̤ وياك "..NamesBot,
 "كول حبي اني "..NamesBot.. "",
@@ -10160,13 +10212,13 @@ local BotName = {
 }
 return LuaTele.sendText(msg_chat_id,msg_id,BotName[math.random(#BotName)],"md",true)   
 end
-if text == (Redis:get(TheSnap.."Snap:Name:Bot") or "سناب") then
-local NamesBot = (Redis:get(TheSnap.."Snap:Name:Bot") or "سناب")
+if text == (Redis:get(TheSnap.."Snap:Name:Bot") or "دروكس") then
+local NamesBot = (Redis:get(TheSnap.."Snap:Name:Bot") or "دروكس")
 local NameBots = {
 "عمر "..NamesBot.. " شتريد؟",
 "أჂ̤ أჂ̤ هياتني اني",
 "موجود بس لتصيح",
-"لتــلح دا احجي ويه بنات سناب بعدين اجاوبك",
+"لتــلح دا احجي ويه بنات دروكس بعدين اجاوبك",
 "راح نموت بكورونا ونته بعدك تصيح "..NamesBot,
 'يمعود والله نعسان'
 }
@@ -11155,7 +11207,7 @@ if text == '/start' then
 Redis:sadd(TheSnap..'Snap:Num:User:Pv',msg.sender.user_id)  
 if not msg.ControllerBot then
 if not Redis:get(TheSnap.."Snap:Start:Bot") then
-local CmdStart = '*\n᥀︙أهلآ بك في بوت '..(Redis:get(TheSnap.."Snap:Name:Bot") or "سناب")..
+local CmdStart = '*\n᥀︙أهلآ بك في بوت '..(Redis:get(TheSnap.."Snap:Name:Bot") or "دروكس")..
 '\n᥀︙اختصاص البوت حماية المجموعات'..
 '\n᥀︙لتفعيل البوت عليك اتباع مايلي ...'..
 '\n᥀︙اضف البوت الى مجموعتك'..

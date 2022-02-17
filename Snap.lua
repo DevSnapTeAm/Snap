@@ -686,7 +686,7 @@ data = {
 {text = '- ارسال استفتاء : '..polls, data = UserId.. '/polls'}, 
 },
 {
-{text = '< اخفاء الامر . ›', data =IdUser..'/'.. '/delAmr'}
+{text = '‹ اخفاء الامر . ›', data =IdUser..'/'.. '/delAmr'}
 },
 }
 }
@@ -711,12 +711,12 @@ else
 UserInfousername = '['..UserInfo.first_name..'](tg://user?id='..UserId..')'
 end
 return {
-Lock     = '[< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه المسح *',
-unLock   = '[< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
-lockKtm  = '[< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الكتم *',
-lockKid  = '[< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه التقييد *',
-lockKick = '[< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الطرد *',
-Reply    = '[< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
+Lock     = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه المسح *',
+unLock   = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
+lockKtm  = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الكتم *',
+lockKid  = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه التقييد *',
+lockKick = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الطرد *',
+Reply    = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
 }
 end
 function StatusCanOrNotCan(ChatId,UserId)
@@ -6438,7 +6438,7 @@ Abs = math.random(2,140);
 local Text ='*᥀︙تم اختيار الاغنيه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >',url="t.me/ii77i9"}},
+{{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›',url="t.me/ii77i9"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -8160,7 +8160,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
 },
 }
 }
@@ -8218,7 +8218,7 @@ data = {
 {text = '- التالي ... ', data =msg.sender.user_id..'/'.. 'NextSeting'}
 },
 {
-{text = '< اخفاء الامر . ›', data =msg.sender.user_id..'/'.. 'delAmr'}
+{text = '‹ اخفاء الامر . ›', data =msg.sender.user_id..'/'.. 'delAmr'}
 },
 }
 }
@@ -8331,7 +8331,7 @@ data = {
 {text = '- ارسال استفتاء : '..polls, data =msg.sender.user_id.. '/polls'}, 
 },
 {
-{text = '< اخفاء الامر . ›', data =msg.sender.user_id..'/'.. '/delAmr'}
+{text = '‹ اخفاء الامر . ›', data =msg.sender.user_id..'/'.. '/delAmr'}
 },
 }
 }
@@ -9513,7 +9513,7 @@ local T = '‹ 𝖣𝖾𝗏 𝖴𝗌𝖾𝗋 : @'..UserSudo..' \n‹ 𝖣𝖾�
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >', url = "https://t.me/ii77i9"}
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = "https://t.me/ii77i9"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -9585,7 +9585,7 @@ photo = "https://t.me/Rasulm12/22"
 local T =[[*
 - 𝖶𝖾𝗅𝖼𝗈𝗆𝖾  𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝖺𝗇𝗉 𝖳𝖾𝖺𝗆 .
 - 𝖳𝗁𝖾 𝗅𝖺𝗋𝗀𝖾𝗌𝗍 𝗉𝗋𝗈𝖿𝖾𝗌𝗌𝗂𝗈𝗇𝖺𝗅 𝗉𝗅𝖺𝗍𝖿𝗈𝗋𝗆 𝗌𝗉𝖾𝖼𝗂𝖺𝗅𝗂𝗓𝖾𝖽 𝗂𝗇 𝖬𝖺𝗄𝗂𝗇𝗀 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖡𝗈𝗍𝗌 .
-- اكبر  منصة أحترافية متخصصة لصنع الروبوتات :* [< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >](https://t.me/ii77i9)
+- اكبر  منصة أحترافية متخصصة لصنع الروبوتات :* [‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -9597,7 +9597,7 @@ keyboard.inline_keyboard = {
 {text = '< Tws 𝖲𝗇𝖺𝗉 . >', url = "https://t.me/OXJBoT"}
 },
 {
-{text = '< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >', url = "https://t.me/ii77i9"}
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = "https://t.me/ii77i9"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -9624,10 +9624,10 @@ data = {
 {text = '‹ اوامر المطورين . ›', data = msg.sender.user_id..'/help5'}, {text = '‹ الالعاب . ›', data = msg.sender.user_id..'/help6'}, 
 },
 {
-{text = '< اوامر القفل الفتح . ›', data = msg.sender.user_id..'/NoNextSeting'}, {text = '< اوامر التعطيل التفعيل . ›', data = msg.sender.user_id..'/listallAddorrem'}, 
+{text = '‹ اوامر القفل الفتح . ›', data = msg.sender.user_id..'/NoNextSeting'}, {text = '‹ اوامر التعطيل التفعيل . ›', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
-{text = '< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'},
 },
 }
 }
@@ -9661,7 +9661,7 @@ data = {
 {text = '᥀︙مسح الادمنيه ', data = msg.sender.user_id..'/Addictive'},{text = '᥀︙مسح المميزين ', data = msg.sender.user_id..'/DelDistinguished'},
 },
 {
-{text = '< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
 },
 }
 }
@@ -9681,7 +9681,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
 },
 }
 }
@@ -9701,7 +9701,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
 },
 }
 }
@@ -9721,7 +9721,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
 },
 }
 }
@@ -9741,7 +9741,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
 },
 }
 }
@@ -9761,7 +9761,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '< 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . >', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
 },
 }
 }
@@ -11739,7 +11739,7 @@ data = {
 {text = '‹ اوامر المطورين . ›', data = IdUser..'/help5'}, {text = '‹ الالعاب . ›', data = IdUser..'/help6'}, 
 },
 {
-{text = '< القائمه الرئيسيه . › ', data = IdUser..'/helpall'},
+{text = '‹ القائمة الرئيسيه . › ', data = IdUser..'/helpall'},
 },
 {
 {text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
@@ -11797,7 +11797,7 @@ data = {
 {text = '‹ اوامر المطورين . ›', data = IdUser..'/help5'}, {text = '‹ الالعاب . ›', data = IdUser..'/help6'}, 
 },
 {
-{text = '< القائمه الرئيسيه . › ', data = IdUser..'/helpall'},
+{text = '‹ القائمة الرئيسيه . › ', data = IdUser..'/helpall'},
 },
 {
 {text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
@@ -11856,7 +11856,7 @@ data = {
 {text = '‹ اوامر المطورين . ›', data = IdUser..'/help5'}, {text = '‹ الالعاب . ›', data = IdUser..'/help6'}, 
 },
 {
-{text = '< القائمه الرئيسيه . › ', data = IdUser..'/helpall'},
+{text = '‹ القائمة الرئيسيه . › ', data = IdUser..'/helpall'},
 },
 {
 {text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
@@ -11949,7 +11949,7 @@ data = {
 {text = '‹ اوامر المطورين . ›', data = IdUser..'/help5'}, {text = '‹ الالعاب . ›', data = IdUser..'/help6'}, 
 },
 {
-{text = '< القائمه الرئيسيه . › ', data = IdUser..'/helpall'},
+{text = '‹ القائمة الرئيسيه . › ', data = IdUser..'/helpall'},
 },
 {
 {text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
@@ -12004,7 +12004,7 @@ data = {
 {text = '‹ اوامر المطورين . ›', data = IdUser..'/help5'}, {text = '‹ الالعاب . ›', data = IdUser..'/help6'}, 
 },
 {
-{text = '< القائمه الرئيسيه . › ', data = IdUser..'/helpall'},
+{text = '‹ القائمة الرئيسيه . › ', data = IdUser..'/helpall'},
 },
 {
 {text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
@@ -13082,10 +13082,10 @@ data = {
 {text = '- الرجوع ... ', data =IdUser..'/'.. 'NoNextSeting'}
 },
 {
-{text = '< القائمه الرئيسيه . ›', data = IdUser..'/helpall'},
+{text = '‹ القائمة الرئيسيه . ›', data = IdUser..'/helpall'},
 },
 {
-{text = '< اخفاء الامر . ›', data =IdUser..'/'.. '/delAmr'}
+{text = '‹ اخفاء الامر . ›', data =IdUser..'/'.. '/delAmr'}
 },
 }
 }
@@ -13139,10 +13139,10 @@ data = {
 {text = '- التالي ... ', data =IdUser..'/'.. 'NextSeting'}
 },
 {
-{text = '< القائمه الرئيسيه . ›', data = IdUser..'/helpall'},
+{text = '‹ القائمة الرئيسيه . ›', data = IdUser..'/helpall'},
 },
 {
-{text = '< اخفاء الامر . ›', data =IdUser..'/'.. 'delAmr'}
+{text = '‹ اخفاء الامر . ›', data =IdUser..'/'.. 'delAmr'}
 },
 }
 }

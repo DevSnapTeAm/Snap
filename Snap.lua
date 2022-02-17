@@ -4680,7 +4680,7 @@ if msg.content.video_note or msg.content.document or msg.content.audio or msg.co
 Redis:sadd(TheSnap.."Snap:allM"..msg.chat_id, msg.id)
 if Redis:get(TheSnap.."Snap:Status:Del:Media"..msg.chat_id) then    
 local gmedia = Redis:scard(TheSnap.."Snap:allM"..msg.chat_id)  
-if gmedia >= 200 then
+if gmedia >= 50 then
 local liste = Redis:smembers(TheSnap.."Snap:allM"..msg.chat_id)
 for k,v in pairs(liste) do
 local Mesge = v
@@ -9509,7 +9509,7 @@ else
 local photo = LuaTele.getUserProfilePhotos(Sudo_Id)
 if photo.total_count > 0 then
 local ban = LuaTele.getUser(Sudo_Id)
-local T = '* 𝘿𝙚𝙫 𝘽𝙤𝙩 \n— — — — — — — — —\n‹ : 𝘿𝙚𝙫 𝙉𝙖𝙢𝙚  : *['..ban.first_name..'](tg://user?id='..ban.id..')*\n*'
+local T = '‹ 𝘿𝙚𝙫 𝘽𝙤𝙩 : ['..ban.first_name..'](https://t.me/'..UserSudo..')\n— — — — — — —\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {

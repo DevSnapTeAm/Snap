@@ -6131,7 +6131,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '< تأكيد الامر . ›', data = '/Zxchq'..msg_chat_id}, {text = '< الغاء الامر . ›', data = msg.sender.user_id..'/Redis'}, 
+{text = '< تأكيد الامر .>', data = '/Zxchq'..msg_chat_id}, {text = '< الغاء الامر .>', data = msg.sender.user_id..'/Redis'}, 
 },
 }
 }
@@ -11739,7 +11739,7 @@ data = {
 {text = '‹ اوامر المطورين . ›', data = IdUser..'/help5'}, {text = '‹ الالعاب . ›', data = IdUser..'/help6'}, 
 },
 {
-{text = '‹ القائمة الرئيسيه . › ', data = IdUser..'/helpall'},
+{text = '‹ القائمه الرئيسيه . › ', data = IdUser..'/helpall'},
 },
 {
 {text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
@@ -11797,7 +11797,7 @@ data = {
 {text = '‹ اوامر المطورين . ›', data = IdUser..'/help5'}, {text = '‹ الالعاب . ›', data = IdUser..'/help6'}, 
 },
 {
-{text = '‹ القائمة الرئيسيه . › ', data = IdUser..'/helpall'},
+{text = '‹ القائمه الرئيسيه . › ', data = IdUser..'/helpall'},
 },
 {
 {text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
@@ -11856,7 +11856,7 @@ data = {
 {text = '‹ اوامر المطورين . ›', data = IdUser..'/help5'}, {text = '‹ الالعاب . ›', data = IdUser..'/help6'}, 
 },
 {
-{text = '‹ القائمة الرئيسيه . › ', data = IdUser..'/helpall'},
+{text = '‹ القائمه الرئيسيه . › ', data = IdUser..'/helpall'},
 },
 {
 {text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
@@ -11949,7 +11949,7 @@ data = {
 {text = '‹ اوامر المطورين . ›', data = IdUser..'/help5'}, {text = '‹ الالعاب . ›', data = IdUser..'/help6'}, 
 },
 {
-{text = '‹ القائمة الرئيسيه . › ', data = IdUser..'/helpall'},
+{text = '‹ القائمه الرئيسيه . › ', data = IdUser..'/helpall'},
 },
 {
 {text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
@@ -12004,7 +12004,7 @@ data = {
 {text = '‹ اوامر المطورين . ›', data = IdUser..'/help5'}, {text = '‹ الالعاب . ›', data = IdUser..'/help6'}, 
 },
 {
-{text = '‹ القائمة الرئيسيه . › ', data = IdUser..'/helpall'},
+{text = '‹ القائمه الرئيسيه . › ', data = IdUser..'/helpall'},
 },
 {
 {text = '‹ اخفاء الامر ›', data =IdUser..'/'.. 'delAmr'}, 
@@ -13082,7 +13082,7 @@ data = {
 {text = '- الرجوع ... ', data =IdUser..'/'.. 'NoNextSeting'}
 },
 {
-{text = '‹ القائمة الرئيسيه . ›', data = IdUser..'/helpall'},
+{text = '‹ القائمه الرئيسيه . ›', data = IdUser..'/helpall'},
 },
 {
 {text = '‹ اخفاء الامر . ›', data =IdUser..'/'.. '/delAmr'}
@@ -13139,7 +13139,7 @@ data = {
 {text = '- التالي ... ', data =IdUser..'/'.. 'NextSeting'}
 },
 {
-{text = '‹ القائمة الرئيسيه . ›', data = IdUser..'/helpall'},
+{text = '‹ القائمه الرئيسيه . ›', data = IdUser..'/helpall'},
 },
 {
 {text = '‹ اخفاء الامر . ›', data =IdUser..'/'.. 'delAmr'}

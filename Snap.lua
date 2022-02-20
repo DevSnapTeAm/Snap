@@ -711,12 +711,12 @@ else
 UserInfousername = '['..UserInfo.first_name..'](tg://user?id='..UserId..')'
 end
 return {
-Lock     = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه المسح *',
-unLock   = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
-lockKtm  = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الكتم *',
-lockKid  = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه التقييد *',
-lockKick = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الطرد *',
-Reply    = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)\n*— — — — — — —\n᥀︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
+Lock     = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/RRRRWR)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه المسح *',
+unLock   = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/RRRRWR)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
+lockKtm  = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/RRRRWR)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الكتم *',
+lockKid  = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/RRRRWR)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه التقييد *',
+lockKick = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/RRRRWR)\n*— — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الطرد *',
+Reply    = '[‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/RRRRWR)\n*— — — — — — —\n᥀︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
 }
 end
 function StatusCanOrNotCan(ChatId,UserId)
@@ -2596,7 +2596,7 @@ data = {
 {text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
 },
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -2679,7 +2679,7 @@ data = {
 {text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
 },
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -3006,13 +3006,13 @@ Redis:set(TheSnap.."Snap:Set:Id:Group"..msg.chat_id,Text_Rand)
 return LuaTele.sendText(msg_chat_id,msg_id, '*᥀︙تم التغيير ارسل ايدي لعرض الايدي الجديد*',"md",true)  
 end
 if text == 'رتبتي' then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n᥀︙رتبتك هي : '..msg.Name_Controller,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙رتبتك هي :* '..msg.Name_Controller,"md",true)  
 end
 if text == 'ايديي' then
-return LuaTele.sendText(msg_chat_id,msg_id,'\nايديك -› '..msg.sender.user_id,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙ايديك :* '..msg.sender.user_id,"md",true)  
 end
-if text == 'معرفي' then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n᥀︙معرفه : @'..UserName,"md",true)  
+if text == 'معرفي' or text == 'يوزري' then
+return LuaTele.sendText(msg_chat_id,msg_id,'\n᥀︙معرفك : @'..UserName,"md",true)  
 end
 if text == 'معلوماتي' or text == 'موقعي' then
 local UserInfo = LuaTele.getUser(msg.sender.user_id)
@@ -6131,7 +6131,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '< تأكيد الامر .>', data = '/Zxchq'..msg_chat_id}, {text = '< الغاء الامر .>', data = msg.sender.user_id..'/Redis'}, 
+{text = '‹ تأكيد الامر .›', data = '/Zxchq'..msg_chat_id}, {text = '‹ الغاء الامر .›', data = msg.sender.user_id..'/Redis'}, 
 },
 }
 }
@@ -6438,7 +6438,7 @@ Abs = math.random(2,140);
 local Text ='*᥀︙تم اختيار الاغنيه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›',url="t.me/ii77i9"}},
+{{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›',url="t.me/RRRRWR"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -8160,7 +8160,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/RRRRWR'}, 
 },
 }
 }
@@ -9513,7 +9513,7 @@ local T = '‹ 𝖣𝖾𝗏 𝖴𝗌𝖾𝗋 : @'..UserSudo..' \n‹ 𝖣𝖾�
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = "https://t.me/ii77i9"}
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = "https://t.me/RRRRWR"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -9564,7 +9564,7 @@ data = {
 {text = 'Facebook', url = 'https://www.facebook.com/help/deleteaccount'},{text = 'Snapchat', url = 'https://accounts.Snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.Snapchat.com%2Faccounts%2Fdeleteaccount'}
 },
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'}, 
 },
 }
 }
@@ -9585,19 +9585,19 @@ photo = "https://t.me/Rasulm12/22"
 local T =[[*
 - 𝖶𝖾𝗅𝖼𝗈𝗆𝖾  𝖲𝗈𝗎𝗋𝖼𝖾 𝖲𝖺𝗇𝗉 𝖳𝖾𝖺𝗆 .
 - 𝖳𝗁𝖾 𝗅𝖺𝗋𝗀𝖾𝗌𝗍 𝗉𝗋𝗈𝖿𝖾𝗌𝗌𝗂𝗈𝗇𝖺𝗅 𝗉𝗅𝖺𝗍𝖿𝗈𝗋𝗆 𝗌𝗉𝖾𝖼𝗂𝖺𝗅𝗂𝗓𝖾𝖽 𝗂𝗇 𝖬𝖺𝗄𝗂𝗇𝗀 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖡𝗈𝗍𝗌 .
-- اكبر  منصة أحترافية متخصصة لصنع الروبوتات :* [‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/ii77i9)
+- اكبر  منصة أحترافية متخصصة لصنع الروبوتات :* [‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›](https://t.me/RRRRWR)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 
 {
-{text = '< Dev 𝖲𝗇𝖺𝗉 . >', url = "https://t.me/DRRDDDP"},{text = '< 𝖲𝗇𝖺𝗉 . >', url = "https://t.me/ii77i9"}
+{text = '‹ Dev 𝖲𝗇𝖺𝗉 . ›', url = "https://t.me/DRRDDDP"},{text = '‹ Upd𝖺tes 𝖲𝗇𝖺𝗉 . ›', url = "https://t.me/ii77i9"}
 },
 {
-{text = '< Tws 𝖲𝗇𝖺𝗉 . >', url = "https://t.me/OXJBoT"}
+{text = '‹ Tws 𝖲𝗇𝖺𝗉 . ›', url = "https://t.me/OXJBoT"}
 },
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = "https://t.me/ii77i9"}
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = "https://t.me/RRRRWR"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -9627,7 +9627,7 @@ data = {
 {text = '‹ اوامر القفل الفتح . ›', data = msg.sender.user_id..'/NoNextSeting'}, {text = '‹ اوامر التعطيل التفعيل . ›', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9661,7 +9661,7 @@ data = {
 {text = '᥀︙مسح الادمنيه ', data = msg.sender.user_id..'/Addictive'},{text = '᥀︙مسح المميزين ', data = msg.sender.user_id..'/DelDistinguished'},
 },
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/RRRRWR'}, 
 },
 }
 }
@@ -9681,7 +9681,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/RRRRWR'}, 
 },
 }
 }
@@ -9701,7 +9701,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/RRRRWR'}, 
 },
 }
 }
@@ -9721,7 +9721,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/RRRRWR'}, 
 },
 }
 }
@@ -9741,7 +9741,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/RRRRWR'}, 
 },
 }
 }
@@ -9761,7 +9761,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/ii77i9'}, 
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 . ›', url = 't.me/RRRRWR'}, 
 },
 }
 }
@@ -9775,7 +9775,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9789,7 +9789,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9805,7 +9805,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9821,7 +9821,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9838,7 +9838,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9853,7 +9853,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9868,7 +9868,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9883,7 +9883,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9912,7 +9912,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9927,7 +9927,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9942,7 +9942,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9957,7 +9957,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9972,7 +9972,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -9988,7 +9988,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -10002,7 +10002,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/ii77i9'},
+{text = '‹ 𝖲𝗇𝖺𝗉 𝖳𝖾𝖺𝗆 ›', url = 't.me/RRRRWR'},
 },
 }
 }
@@ -10866,7 +10866,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '᥀ السورس .', url = 't.me/ii77i9'},{text = '᥀ لتنصيب بوت .', url = 't.me/DRRDDDP'}, 
+{text = '᥀ السورس .', url = 't.me/RRRRWR'},{text = '᥀ لتنصيب بوت .', url = 't.me/DRRDDDP'}, 
 },
 {
 {text = '᥀ اضفني في مجموعتك .', url = 't.me/'..UserBot..'?startgroup=new'}, 
@@ -10879,7 +10879,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '᥀ السورس .', url = 't.me/ii77i9'},{text = '᥀ لتنصيب بوت .', url = 't.me/DRRDDDP'}, 
+{text = '᥀ السورس .', url = 't.me/RRRRWR'},{text = '᥀ لتنصيب بوت .', url = 't.me/DRRDDDP'}, 
 },
 {
 {text = '᥀ اضفني في مجموعتك .', url = 't.me/'..UserBot..'?startgroup=new'}, 

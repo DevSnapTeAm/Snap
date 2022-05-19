@@ -1,8 +1,8 @@
 ------------------------------------------------
--- This Source Was Developed By (RsU) @DRRDDDP.--
+-- This Source Was Developed By (RsU) @HMHHHU.--
 --   This Is The Source Channel @RRRRWR .   --
 --                 - Snap Source -                   --
---        -- https://t.me/DRRDDDP --         --
+--        -- https://t.me/HMHHHU --         --
 ------------------------------------------------ 
 URL     = require("./libs/url")
 JSON    = require("./libs/dkjson")
@@ -117,7 +117,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,1401759878}  
+local ListSudos ={Sudo_Id,67468960}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -128,9 +128,9 @@ end
 function Controllerbanall(ChatId,UserId)
 Status = 0
 DevelopersQ = Redis:sismember(TheSnap.."Snap:DevelopersQ:Groups",UserId) 
-if UserId == 1401759878 then
+if UserId == 67468960 then
 Status = true
-elseif UserId == 1401759878 then
+elseif UserId == 67468960 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -154,9 +154,9 @@ Managers = Redis:sismember(TheSnap.."Snap:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(TheSnap.."Snap:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheSnap.."Snap:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1401759878 then
+if UserId == 67468960 then
 Status = 'مبرمج السورس'
-elseif UserId == 1401759878 then
+elseif UserId == 67468960 then
 Status = 'مطور السورس'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
@@ -734,9 +734,9 @@ Managers = Redis:sismember(TheSnap.."Snap:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(TheSnap.."Snap:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheSnap.."Snap:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1401759878 then
+if UserId == 67468960 then
 Status = true
-elseif UserId == 1401759878 then
+elseif UserId == 67468960 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -773,9 +773,9 @@ Managers = Redis:sismember(TheSnap.."Snap:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(TheSnap.."Snap:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheSnap.."Snap:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1401759878 then
+if UserId == 67468960 then
 Status = true
-elseif UserId == 1401759878 then
+elseif UserId == 67468960 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -901,10 +901,10 @@ return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberSt
 elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
-if tonumber(msg.sender.user_id) == 1401759878 then
+if tonumber(msg.sender.user_id) == 67468960 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 1401759878 then
+elseif tonumber(msg.sender.user_id) == 67468960 then
 msg.Name_Controller = 'مطور السورس '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
@@ -2333,7 +2333,7 @@ end
 end
 end
 if text== "همسه"  or text == "همسة" then
-return LuaTele.sendText(msg.chat_id,msg.id,"᥀︙اهلا بك عزيزي\n᥀︙اكتب معرف البوت ثم الرساله ثم معرف الشخص\n᥀︙مثال\n@KN_Kbot هاي @DRRDDDP")
+return LuaTele.sendText(msg.chat_id,msg.id,"᥀︙اهلا بك عزيزي\n᥀︙اكتب معرف البوت ثم الرساله ثم معرف الشخص\n᥀︙مثال\n@KN_Kbot هاي @HMHHHU")
 end
 if text == 'تحديث السورس' or text == 'تحديث السورس ᥀' then
 if not msg.ControllerBot then 
@@ -2518,7 +2518,7 @@ end
 end   
 Get_Json = Get_Json..'],'
 end
-Get_Json = Get_Json..'"Dev":"DRRDDDP"}'
+Get_Json = Get_Json..'"Dev":"HMHHHU"}'
 end
 Get_Json = Get_Json..'}}'
 local File = io.open('./'..UserBot..'.json', "w")
@@ -9942,7 +9942,7 @@ Redis:del(TheSnap..'Snap:Texting:DevTheSnap')
 return LuaTele.sendText(msg_chat_id,msg_id,'᥀︙تم حذف كليشه المطور')
 end
 if text == 'مبرمج سورس' or text == 'مبرمج السورس' or text == 'المبرمج' then  
-local UserId_Info = LuaTele.searchPublicChat("DRRDDDP")
+local UserId_Info = LuaTele.searchPublicChat("HMHHHU")
 if UserId_Info.id then
 local  ban = LuaTele.getUser(UserId_Info.id)
 local  bain = LuaTele.getUserFullInfo(Sudo_Id)
@@ -9957,7 +9957,7 @@ local TestText = "Snap 𝖲𝗈𝗎𝗋𝖼𝖾\n— — — — — — — —
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '- 𝖱𝖺𝗌𝗎𝗅 .𝖬𝗎𝗇𝗍𝖺ᴢ𝖺𝗋 .', url = "https://t.me/DRRDDDP"}
+{text = '- 𝖱𝖺𝗌𝗎𝗅 .𝖬𝗎𝗇𝗍𝖺ᴢ𝖺𝗋 .', url = "https://t.me/HMHHHU"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -9967,7 +9967,7 @@ local TestText = "- معلومات مبرمج السورس : \\nn: name Dev . ["
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '- 𝖱𝖺𝗌𝗎𝗅 .𝖬𝗎𝗇𝗍𝖺ᴢ𝖺𝗋 .', url = "https://t.me/DRRDDDP"}
+{text = '- 𝖱𝖺𝗌𝗎𝗅 .𝖬𝗎𝗇𝗍𝖺ᴢ𝖺𝗋 .', url = "https://t.me/HMHHHU"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -10087,7 +10087,7 @@ local T =[[*
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '‹ D𝖾𝗏 Snap . ›', url = "https://t.me/DRRDDDP"},{text = '‹ Upd𝖺tes 𝖲𝗇𝖺𝗉 . ›', url = "https://t.me/ii77i9"}
+{text = '‹ D𝖾𝗏 Snap . ›', url = "https://t.me/HMHHHU"},{text = '‹ Upd𝖺tes 𝖲𝗇𝖺𝗉 . ›', url = "https://t.me/ii77i9"}
 },
 {
 {text = '‹ Tws Snap . ›', url = "https://t.me/OXJBoT"}
@@ -11692,7 +11692,7 @@ if photo.total_count > 0 then
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '᥀ السورس .', url = 't.me/RRRRWR'},{text = '᥀ لتنصيب بوت .', url = 't.me/DRRDDDP'}, 
+{text = '᥀ السورس .', url = 't.me/RRRRWR'},{text = '᥀ لتنصيب بوت .', url = 't.me/HMHHHU'}, 
 },
 {
 {text = '᥀ اضفني في مجموعتك .', url = 't.me/'..UserBot..'?startgroup=new'}, 
@@ -11706,7 +11706,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '᥀ السورس .', url = 't.me/RRRRWR'},{text = '᥀ لتنصيب بوت .', url = 't.me/DRRDDDP'}, 
+{text = '᥀ السورس .', url = 't.me/RRRRWR'},{text = '᥀ لتنصيب بوت .', url = 't.me/HMHHHU'}, 
 },
 {
 {text = '᥀ اضفني في مجموعتك .', url = 't.me/'..UserBot..'?startgroup=new'}, 
